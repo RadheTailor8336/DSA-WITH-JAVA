@@ -2,7 +2,15 @@ package Arrays;
 
 public class passingArrayToMethods {
     public static void main(String[] args) {
-        int x = 6;
-        System.out.println(x);
+        int[] arr= {10,20,30,40};
+        System.out.println(arr[0]);
+        change(arr);
+        System.out.println(arr[0]);
+    }
+
+    public static void change(int[] arr){
+        arr[0] = 90;
     }
 }
+
+// it gives an output - 10,90 cause of pass by reference
